@@ -1,4 +1,4 @@
-# 🌍 Climate Action AI - SDG 13
+# 🌍 Climate Action AI 
 
 Machine Learning solution for predicting carbon emissions and analyzing climate policies aligned with UN Sustainable Development Goal 13.
 
