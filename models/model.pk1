@@ -1,0 +1,15 @@
+# Code to generate the model.pkl file
+from models.emission_predictor import ClimateEmissionPredictor
+import joblib
+
+# Create and train model
+predictor = ClimateEmissionPredictor(model_type='random_forest')
+results = predictor.train()
+
+print("Model trained successfully!")
+print(f"R² Score: {results['r2']:.3f}")
+print(f"MAE: {results['mae']:.3f}")
+
+# Save model
+predictor.save_model('models/emission_model.pkl')
+print("Model saved as 'models/emission_model.pkl'")
